@@ -1,0 +1,144 @@
+<div class="encomenda-lista-container">
+  <div class="encomenda-header-row">
+    <div class="encomenda-header-title">
+      <mat-icon style="vertical-align: middle; color: #A0522D;">shopping_cart</mat-icon> Encomendas
+    </div>
+    <div class="import-section">
+      <button mat-stroked-button color="accent" (click)="fileInput.click()">Importar CSV</button>
+      <button mat-stroked-button color="primary" (click)="exportCSV()">Exportar CSV</button>
+      <input #fileInput type="file" accept=".csv" style="display:none" (change)="onFileSelected($event)" />
+    </div>
+  </div>
+  <p class="section-desc">Gerencie os pedidos feitos pelos clientes!</p>
+  <form [formGroup]="encomendaForm" (ngSubmit)="adicionarEncomenda()" class="encomenda-form">
+    <div class="main-fields-row">
+      <mat-form-field appearance="outline" class="cliente-id-field">
+        <mat-label>ID do Cliente</mat-label>
+        <mat-select formControlName="cliente_id" (selectionChange)="onClienteIdSelected()">
+          <mat-option *ngFor="let cliente of clientes" [value]="cliente.id">
+            {{ cliente.id }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="cliente-nome-field">
+        <mat-label>Nome do Cliente</mat-label>
+        <mat-select formControlName="cliente_nome" (selectionChange)="onClienteNomeSelected()">
+          <mat-option *ngFor="let cliente of clientes" [value]="cliente.nome">
+            {{ cliente.nome }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <mat-divider style="margin: 1rem 0 1.5rem 0;"></mat-divider>
+    <div class="itens-card">
+      <div class="itens-header">
+        <mat-icon class="itens-icon">bakery_dining</mat-icon>
+        <span>Itens do Pedido</span>
+      </div>
+      <div formArrayName="ingredientes">
+        <div *ngFor="let ingr of ingredientes.controls; let i = index" [formGroupName]="i" class="ingrediente-row" [ngClass]="{'duplicate-row': isDuplicateRow(i)}" style="display: flex; align-items: center; gap: 1rem;">
+          <mat-form-field appearance="outline" class="produto-nome-field">
+            <mat-label>Nome</mat-label>
+            <input matInput formControlName="nome" required [matAutocomplete]="autoNome" (optionSelected)="onProdutoNomeSelected(i)" (input)="onProdutoNomeInput(i)" (blur)="onProdutoNomeInput(i)" />
+            <mat-autocomplete #autoNome="matAutocomplete" autoActiveFirstOption>
+              <mat-option *ngFor="let produto of produtos" [value]="produto.nome">
+                {{ produto.nome }} ({{ produto.preco | currency:'EUR':'symbol':'1.2-2' }})
+              </mat-option>
+            </mat-autocomplete>
+            <mat-error *ngIf="ingr.get('nome')?.hasError('required') && ingr.get('nome')?.touched">
+              Obrigatório.
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Qtd.</mat-label>
+            <input matInput formControlName="quantidade" type="number" required />
+            <mat-error *ngIf="ingr.get('quantidade')?.hasError('required') && ingr.get('quantidade')?.touched">
+              Obrigatório.
+            </mat-error>
+            <mat-error *ngIf="ingr.get('quantidade')?.hasError('pattern') && ingr.get('quantidade')?.touched">
+              Deve ser um número positivo.
+            </mat-error>
+          </mat-form-field>
+          <button mat-icon-button color="warn" type="button" (click)="removeIngrediente(i)" aria-label="Remover item" style="margin-left: 0.5em;">
+            <mat-icon>delete</mat-icon>
+          </button>
+          <div *ngIf="isDuplicateRow(i)" class="duplicate-warning">
+            <mat-icon color="warn" style="vertical-align: middle; font-size: 1.1em;">warning</mat-icon>
+            <span style="margin-left: 0.4em; color: #a05a13; font-size: 0.98em;">Produto já adicionado acima. Altere ou remova este item.</span>
+          </div>
+        </div>
+      </div>
+      <div class="add-item-btn-cookie-wrapper">
+        <button mat-stroked-button color="accent" type="button" (click)="addIngrediente()" class="add-item-btn cookie-theme" [disabled]="lastRowIncomplete">
+          <mat-icon>cookie</mat-icon>
+          <span>Adicionar Item</span>
+        </button>
+        <span *ngIf="lastRowIncomplete" style="color: #d32f2f; margin-left: 1rem; font-size: 0.95em;">Preencha o nome e quantidade antes de adicionar outro item.</span>
+      </div>
+    </div>
+    <div class="total-bakery-wrapper">
+      <mat-icon class="total-icon">receipt_long</mat-icon>
+      <span class="total-value">Total: {{ total | currency:'EUR':'symbol':'1.2-2' }}</span>
+    </div>
+    <div class="adicionar-pedido-btn-wrapper">
+      <button mat-raised-button color="primary" type="submit" [disabled]="!encomendaForm.valid || hasDuplicateIngredientes" class="cookie-btn adicionar-pedido-btn"><mat-icon>cookie</mat-icon>Adicionar Pedido</button>
+    </div>
+  </form>
+  <div style="margin-top: 2.5rem;"></div>
+
+  <table mat-table [dataSource]="encomendas" class="mat-elevation-z8">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let encomenda">{{ encomenda.id }}</td>
+    </ng-container>
+    <ng-container matColumnDef="cliente_id">
+      <th mat-header-cell *matHeaderCellDef>Cliente</th>
+      <td mat-cell *matCellDef="let encomenda">{{ getClienteNome(encomenda.cliente_id) }}</td>
+    </ng-container>
+    <ng-container matColumnDef="ingredientes">
+      <th mat-header-cell *matHeaderCellDef>Itens do Pedido</th>
+      <td mat-cell *matCellDef="let encomenda">
+        <ul>
+          <li *ngFor="let ingr of encomenda.ingredientes">
+            {{ ingr.nome }} ({{ ingr.quantidade }})
+          </li>
+        </ul>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="total">
+      <th mat-header-cell *matHeaderCellDef>Total (€)</th>
+      <td mat-cell *matCellDef="let encomenda">{{ encomenda.total }}</td>
+    </ng-container>
+    <ng-container matColumnDef="timestamp">
+      <th mat-header-cell *matHeaderCellDef>Data do Pedido</th>
+      <td mat-cell *matCellDef="let encomenda">{{ encomenda.timestamp | date:'short' }}</td>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Ações</th>
+      <td mat-cell *matCellDef="let encomenda">
+        <button mat-icon-button color="primary" (click)="startEdit(encomenda)" matTooltip="Editar Pedido"><mat-icon>edit</mat-icon></button>
+        <button mat-icon-button color="warn" (click)="deleteEncomenda(encomenda)" matTooltip="Remover Pedido"><mat-icon>delete</mat-icon></button>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+
+<style>
+.duplicate-row {
+  border: 2px solid #ffe0b2 !important;
+  border-radius: 10px;
+  background: #fff8e1;
+  margin-bottom: 0.5rem;
+  position: relative;
+  box-shadow: 0 2px 8px #ffe0b2;
+}
+.duplicate-warning {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  padding-left: 0.2em;
+}
+</style>

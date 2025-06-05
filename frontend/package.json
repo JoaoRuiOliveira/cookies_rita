@@ -1,0 +1,92 @@
+{
+  "name": "ritas-cookies",
+  "version": "0.0.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "electron": "electron .",
+    "electron:build": "electron-builder"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/cdk": "^19.2.15",
+    "@angular/common": "^19.2.0",
+    "@angular/compiler": "^19.2.0",
+    "@angular/core": "^19.2.0",
+    "@angular/forms": "^19.2.0",
+    "@angular/material": "^19.2.15",
+    "@angular/platform-browser": "^19.2.0",
+    "@angular/platform-browser-dynamic": "^19.2.0",
+    "@angular/router": "^19.2.0",
+    "axios": "^1.9.0",
+    "cookies_rita": "file:..",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^19.2.12",
+    "@angular/cli": "^19.2.12",
+    "@angular/compiler-cli": "^19.2.0",
+    "@types/jasmine": "~5.1.0",
+    "electron": "^28.2.3",
+    "electron-builder": "^24.6.0",
+    "jasmine-core": "~5.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.7.2"
+  },
+  "build": {
+    "appId": "com.cookies.rita",
+    "productName": "Rita's Cookies",
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "electron/backend/app.exe",
+        "to": "backend/app.exe"
+      },
+      {
+        "from": "electron/backend/receitas.csv",
+        "to": "backend/receitas.csv"
+      },
+      {
+        "from": "electron/backend/clientes.csv",
+        "to": "backend/clientes.csv"
+      },
+      {
+        "from": "electron/backend/ingredientes.csv",
+        "to": "backend/ingredientes.csv"
+      },
+      {
+        "from": "electron/backend/produtos.csv",
+        "to": "backend/produtos.csv"
+      },
+      {
+        "from": "electron/backend/encomendas.csv",
+        "to": "backend/encomendas.csv"
+      }
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/cookie.ico"
+    },
+    "mac": {
+      "target": []
+    }
+  },
+  "author": "João Oliveira",
+  "description": "Cookies Rita is a desktop application for managing cookie orders, clients, ingredients, products, and recipes. It features a FastAPI backend with CSV storage and an Angular Material frontend, all bundled for easy installation and use on Windows."
+}

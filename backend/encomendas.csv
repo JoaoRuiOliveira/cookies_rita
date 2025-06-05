@@ -1,0 +1,7 @@
+id,cliente_id,ingredientes,total,timestamp
+1,1,"[{'id': 1, 'nome': 'Chocolate Chip', 'quantidade': 2.0}, {'id': 2, 'nome': 'Amêndoa', 'quantidade': 1.0}]",7.0,2024-06-01T10:15:00
+2,2,"[{'id': 3, 'nome': 'Red Velvet', 'quantidade': 3.0}]",9.0,2024-06-02T14:30:00
+3,3,"[{'id': 1, 'nome': 'Chocolate Chip', 'quantidade': 1.0}, {'id': 3, 'nome': 'Red Velvet', 'quantidade': 2.0}]",8.5,2024-06-03T09:45:00
+4,1,"[{'id': 1, 'nome': 'Chocolate Chip', 'quantidade': 7.0}]",17.5,2025-05-30T14:59:58.648464
+5,3,"[{'id': 1, 'nome': 'Chocolate Chip', 'quantidade': 3.0}, {'id': 2, 'nome': 'Amêndoa', 'quantidade': 4.0}]",19.5,2025-05-30T15:00:24.977473
+6,5,"[{'id': 2, 'nome': 'Amêndoa', 'quantidade': 3.0}, {'id': 3, 'nome': 'Red Velvet', 'quantidade': 3.0}, {'id': 2, 'nome': 'Amêndoa', 'quantidade': 1.0}]",22.5,2025-05-30T15:02:57.057223

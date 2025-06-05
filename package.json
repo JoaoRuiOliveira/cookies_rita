@@ -1,0 +1,17 @@
+{
+  "name": "cookies_rita",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@angular/animations": "^19.2.11",
+    "@angular/cdk": "^19.2.16",
+    "@angular/material": "^19.2.16"
+  }
+}

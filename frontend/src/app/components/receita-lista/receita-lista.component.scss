@@ -1,0 +1,130 @@
+.receita-lista-container {
+  background: #fff3e0;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px 0 #e0c3a0;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  border: 2px solid #f5d7b2;
+}
+
+.receita-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.receita-header-title {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  color: #8D5524;
+}
+
+.import-section {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.receita-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+button[mat-raised-button], button[mat-stroked-button] {
+  border-radius: 24px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #f5d7b2;
+  transition: background 0.2s, color 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s;
+}
+
+button[mat-raised-button]:hover, button[mat-stroked-button]:hover {
+  background: #ffe0b2;
+  color: #8D5524;
+  transform: scale(1.06) rotate(-2deg);
+  box-shadow: 0 6px 18px #f7b267;
+}
+
+button[mat-raised-button]:active, button[mat-stroked-button]:active {
+  transform: scale(0.97) rotate(1deg);
+  box-shadow: 0 1px 4px #f5d7b2;
+}
+
+button[mat-raised-button].cookie-btn {
+  background: #f7b267;
+  color: #fff;
+  position: relative;
+}
+
+button[mat-raised-button].cookie-btn mat-icon {
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+
+.mat-elevation-z8 {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  background: #fffaf3;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+tr.mat-row:nth-child(even) {
+  background: #ffe0b2;
+}
+
+tr.mat-row:nth-child(odd) {
+  background: #fffaf3;
+}
+
+th.mat-header-cell {
+  background: #f7b267;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+td.mat-cell, th.mat-header-cell {
+  padding: 0.7rem 1rem;
+}
+
+button[mat-icon-button] {
+  background: #fff3e0;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+  transition: background 0.2s, color 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s;
+}
+button[mat-icon-button]:hover {
+  background: #f7b267;
+  color: #fff;
+  transform: scale(1.18) rotate(-8deg);
+  box-shadow: 0 4px 12px #f7b267;
+}
+button[mat-icon-button]:active {
+  transform: scale(0.92) rotate(4deg);
+  box-shadow: 0 1px 4px #f5d7b2;
+}
+
+@media (max-width: 700px) {
+  .receita-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .import-section {
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

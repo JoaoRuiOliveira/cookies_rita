@@ -1,0 +1,4 @@
+id,nome,descricao,ingredientes
+1,Bolo de Chocolate,Bolo fofo de chocolate,"[{ 'id': 1, 'quantidade': 200 }, { 'id': 2, 'quantidade': 100 }]"
+2,Amêndoa Crocante,Doce crocante de amêndoa,"[{ 'id': 2, 'quantidade': 150 }]"
+3,Red Velvet Clássico,Bolo clássico Red Velvet,"[{ 'id': 3, 'quantidade': 250 }]" 

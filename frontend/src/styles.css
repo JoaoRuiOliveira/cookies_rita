@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  background: linear-gradient(135deg, #fbeee6 0%, #f8d7b9 100%);
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  height: 100%;
+}
+
+h1, h2, .section-desc {
+  font-family: 'Pacifico', cursive;
+  color: #8D5524;
+}
+
+.section-desc {
+  font-size: 1.1rem;
+  color: #a67c52;
+  margin-bottom: 1.5rem;
+}
+
+/* DEBUG: Make all tab labels red to test global style application */
+::ng-deep .mat-tab-group .mat-tab-label {
+  color: red !important;
+}
+
+::ng-deep .mat-tab-header {
+  background: #f7b267 !important;
+  border-bottom: 4px solid #8D5524 !important;
+  box-shadow: 0 4px 16px #f7b26799 !important;
+}
+
+::ng-deep .mat-tab-group .mat-tab-label.mat-tab-label-active {
+  color: #fff !important;
+  background: #8D5524 !important;
+  border-radius: 16px 16px 0 0 !important;
+  font-weight: bold !important;
+  box-shadow: 0 4px 16px #8D552499 !important;
+  border: 2px solid #fff8f0 !important;
+  z-index: 2 !important;
+  position: relative !important;
+}
+
+::ng-deep .mat-tab-group .mat-ink-bar {
+  background-color: #fff !important;
+  height: 8px !important;
+  border-radius: 4px 4px 0 0 !important;
+  box-shadow: 0 2px 8px #8D5524 !important;
+} 

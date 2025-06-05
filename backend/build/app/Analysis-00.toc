@@ -1,0 +1,2380 @@
+(['C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\app.py'],
+ ['C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend'],
+ ['python_multipart',
+  'python_multipart.decoders',
+  'python_multipart.exceptions',
+  'python_multipart.multipart',
+  'fastapi',
+  'fastapi.__main__',
+  'fastapi._compat',
+  'fastapi.applications',
+  'fastapi.background',
+  'fastapi.cli',
+  'fastapi.concurrency',
+  'fastapi.datastructures',
+  'fastapi.dependencies',
+  'fastapi.dependencies.models',
+  'fastapi.dependencies.utils',
+  'fastapi.encoders',
+  'fastapi.exception_handlers',
+  'fastapi.exceptions',
+  'fastapi.logger',
+  'fastapi.middleware',
+  'fastapi.middleware.cors',
+  'fastapi.middleware.gzip',
+  'fastapi.middleware.httpsredirect',
+  'fastapi.middleware.trustedhost',
+  'fastapi.middleware.wsgi',
+  'fastapi.openapi',
+  'fastapi.openapi.constants',
+  'fastapi.openapi.docs',
+  'fastapi.openapi.models',
+  'fastapi.openapi.utils',
+  'fastapi.param_functions',
+  'fastapi.params',
+  'fastapi.requests',
+  'fastapi.responses',
+  'fastapi.routing',
+  'fastapi.security',
+  'fastapi.security.api_key',
+  'fastapi.security.base',
+  'fastapi.security.http',
+  'fastapi.security.oauth2',
+  'fastapi.security.open_id_connect_url',
+  'fastapi.security.utils',
+  'fastapi.staticfiles',
+  'fastapi.templating',
+  'fastapi.testclient',
+  'fastapi.types',
+  'fastapi.utils',
+  'fastapi.websockets',
+  'uvicorn',
+  'uvicorn.__main__',
+  'uvicorn._subprocess',
+  'uvicorn._types',
+  'uvicorn.config',
+  'uvicorn.importer',
+  'uvicorn.lifespan',
+  'uvicorn.lifespan.off',
+  'uvicorn.lifespan.on',
+  'uvicorn.logging',
+  'uvicorn.loops',
+  'uvicorn.loops.asyncio',
+  'uvicorn.loops.auto',
+  'uvicorn.loops.uvloop',
+  'uvicorn.main',
+  'uvicorn.middleware',
+  'uvicorn.middleware.asgi2',
+  'uvicorn.middleware.message_logger',
+  'uvicorn.middleware.proxy_headers',
+  'uvicorn.middleware.wsgi',
+  'uvicorn.protocols',
+  'uvicorn.protocols.http',
+  'uvicorn.protocols.http.auto',
+  'uvicorn.protocols.http.flow_control',
+  'uvicorn.protocols.http.h11_impl',
+  'uvicorn.protocols.http.httptools_impl',
+  'uvicorn.protocols.utils',
+  'uvicorn.protocols.websockets',
+  'uvicorn.protocols.websockets.auto',
+  'uvicorn.protocols.websockets.websockets_impl',
+  'uvicorn.protocols.websockets.wsproto_impl',
+  'uvicorn.server',
+  'uvicorn.supervisors',
+  'uvicorn.supervisors.basereload',
+  'uvicorn.supervisors.multiprocess',
+  'uvicorn.supervisors.statreload',
+  'uvicorn.supervisors.watchfilesreload',
+  'uvicorn.workers',
+  'uvicorn.logging',
+  'uvicorn.protocols',
+  'email.mime.multipart'],
+ [('C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks',
+   -1000),
+  ('C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib',
+   -1000)],
+ {},
+ [],
+ [],
+ False,
+ {},
+ 0,
+ [],
+ [('clientes.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\clientes.csv',
+   'DATA'),
+  ('encomendas.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\encomendas.csv',
+   'DATA'),
+  ('ingredientes.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\ingredientes.csv',
+   'DATA'),
+  ('produtos.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\produtos.csv',
+   'DATA'),
+  ('receitas.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\receitas.csv',
+   'DATA')],
+ '3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]',
+ [('pyi_rth_pkgutil',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('app',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\app.py',
+   'PYSOURCE')],
+ [('subprocess',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\subprocess.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\selectors.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\contextlib.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\threading.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_threading_local.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\signal.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_strptime.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\calendar.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\argparse.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\textwrap.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\shutil.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\zipfile.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\py_compile.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\__init__.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib.resources.abc',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\abc.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\__init__.py',
+   'PYMODULE'),
+  ('importlib.resources._legacy',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\_legacy.py',
+   'PYMODULE'),
+  ('importlib.resources._common',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\_common.py',
+   'PYMODULE'),
+  ('importlib.resources._adapters',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\_adapters.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tempfile.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\random.py',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\statistics.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\decimal.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\contextvars.py',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\fractions.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\numbers.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\hashlib.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bisect.py',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\_abc.py',
+   'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_functools.py',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_collections.py',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_meta.py',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\metadata\\_text.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\string.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\base64.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\getopt.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\utils.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\socket.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\quopri.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\readers.py',
+   'PYMODULE'),
+  ('importlib.resources.readers',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\readers.py',
+   'PYMODULE'),
+  ('importlib.resources._itertools',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\resources\\_itertools.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tokenize.py',
+   'PYMODULE'),
+  ('token',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\token.py',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pathlib.py',
+   'PYMODULE'),
+  ('struct',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\struct.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tarfile.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\gzip.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_compression.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\lzma.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\bz2.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\fnmatch.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\copy.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\gettext.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\resource_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\getpass.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\nturl2path.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ftplib.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\netrc.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\shlex.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\mimetypes.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('http.cookies',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\cookies.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ssl.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\http\\client.py',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\hmac.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\queue.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\shared_memory.py',
+   'PYMODULE'),
+  ('secrets',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\secrets.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pickle.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pprint.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\dataclasses.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\inspect.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\dis.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\opcode.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\runpy.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\pkgutil.py',
+   'PYMODULE'),
+  ('zipimport',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\zipimport.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('email.mime.multipart',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\mime\\multipart.py',
+   'PYMODULE'),
+  ('email.mime',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\mime\\__init__.py',
+   'PYMODULE'),
+  ('email.mime.base',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\email\\mime\\base.py',
+   'PYMODULE'),
+  ('uvicorn.workers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\workers.py',
+   'PYMODULE'),
+  ('asyncio',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.unix_events',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\unix_events.py',
+   'PYMODULE'),
+  ('asyncio.log',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\log.py',
+   'PYMODULE'),
+  ('asyncio.windows_events',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\windows_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_utils',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\windows_utils.py',
+   'PYMODULE'),
+  ('asyncio.selector_events',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\selector_events.py',
+   'PYMODULE'),
+  ('asyncio.proactor_events',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\proactor_events.py',
+   'PYMODULE'),
+  ('asyncio.base_subprocess',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\base_subprocess.py',
+   'PYMODULE'),
+  ('asyncio.threads',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\threads.py',
+   'PYMODULE'),
+  ('asyncio.timeouts',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\timeouts.py',
+   'PYMODULE'),
+  ('asyncio.taskgroups',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\taskgroups.py',
+   'PYMODULE'),
+  ('asyncio.subprocess',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\subprocess.py',
+   'PYMODULE'),
+  ('asyncio.streams',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\streams.py',
+   'PYMODULE'),
+  ('asyncio.queues',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\queues.py',
+   'PYMODULE'),
+  ('asyncio.runners',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\runners.py',
+   'PYMODULE'),
+  ('asyncio.base_events',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\base_events.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\concurrent\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.trsock',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\trsock.py',
+   'PYMODULE'),
+  ('asyncio.staggered',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\staggered.py',
+   'PYMODULE'),
+  ('asyncio.tasks',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\tasks.py',
+   'PYMODULE'),
+  ('asyncio.locks',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\locks.py',
+   'PYMODULE'),
+  ('asyncio.base_tasks',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\base_tasks.py',
+   'PYMODULE'),
+  ('asyncio.mixins',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\mixins.py',
+   'PYMODULE'),
+  ('asyncio.sslproto',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\sslproto.py',
+   'PYMODULE'),
+  ('asyncio.transports',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\transports.py',
+   'PYMODULE'),
+  ('asyncio.protocols',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\protocols.py',
+   'PYMODULE'),
+  ('asyncio.futures',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\futures.py',
+   'PYMODULE'),
+  ('asyncio.base_futures',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\base_futures.py',
+   'PYMODULE'),
+  ('asyncio.exceptions',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\exceptions.py',
+   'PYMODULE'),
+  ('asyncio.events',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\events.py',
+   'PYMODULE'),
+  ('asyncio.format_helpers',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\format_helpers.py',
+   'PYMODULE'),
+  ('asyncio.coroutines',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\coroutines.py',
+   'PYMODULE'),
+  ('asyncio.constants',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\constants.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\__future__.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors.watchfilesreload',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\watchfilesreload.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors.statreload',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\statreload.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors.multiprocess',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\multiprocess.py',
+   'PYMODULE'),
+  ('click',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\__init__.py',
+   'PYMODULE'),
+  ('click.parser',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\parser.py',
+   'PYMODULE'),
+  ('click.shell_completion',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\shell_completion.py',
+   'PYMODULE'),
+  ('difflib',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\difflib.py',
+   'PYMODULE'),
+  ('click.utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\utils.py',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\glob.py',
+   'PYMODULE'),
+  ('typing_extensions',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\typing_extensions.py',
+   'PYMODULE'),
+  ('click._compat',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\_compat.py',
+   'PYMODULE'),
+  ('colorama',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\colorama\\__init__.py',
+   'PYMODULE'),
+  ('colorama.ansitowin32',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\colorama\\ansitowin32.py',
+   'PYMODULE'),
+  ('colorama.winterm',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\colorama\\winterm.py',
+   'PYMODULE'),
+  ('colorama.ansi',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\colorama\\ansi.py',
+   'PYMODULE'),
+  ('colorama.initialise',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\colorama\\initialise.py',
+   'PYMODULE'),
+  ('colorama.win32',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\colorama\\win32.py',
+   'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('click._winconsole',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\_winconsole.py',
+   'PYMODULE'),
+  ('click.termui',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\termui.py',
+   'PYMODULE'),
+  ('click._termui_impl',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\_termui_impl.py',
+   'PYMODULE'),
+  ('tty',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tty.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\webbrowser.py',
+   'PYMODULE'),
+  ('click.globals',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\globals.py',
+   'PYMODULE'),
+  ('click.formatting',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\formatting.py',
+   'PYMODULE'),
+  ('click._textwrap',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\_textwrap.py',
+   'PYMODULE'),
+  ('click.exceptions',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\exceptions.py',
+   'PYMODULE'),
+  ('click.decorators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\decorators.py',
+   'PYMODULE'),
+  ('click.core',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\core.py',
+   'PYMODULE'),
+  ('click.types',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click\\types.py',
+   'PYMODULE'),
+  ('uuid',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\uuid.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\platform.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors.basereload',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\basereload.py',
+   'PYMODULE'),
+  ('uvicorn.supervisors',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\supervisors\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.server',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\server.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.websockets.wsproto_impl',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\wsproto_impl.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.websockets.websockets_impl',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\websockets_impl.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.websockets.auto',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\auto.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.websockets',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\utils.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http.httptools_impl',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\httptools_impl.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http.h11_impl',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\h11_impl.py',
+   'PYMODULE'),
+  ('h11._connection',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_connection.py',
+   'PYMODULE'),
+  ('h11._writers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_writers.py',
+   'PYMODULE'),
+  ('h11._util',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_util.py',
+   'PYMODULE'),
+  ('h11._state',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_state.py',
+   'PYMODULE'),
+  ('h11._receivebuffer',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_receivebuffer.py',
+   'PYMODULE'),
+  ('h11._readers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_readers.py',
+   'PYMODULE'),
+  ('h11._abnf',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_abnf.py',
+   'PYMODULE'),
+  ('h11._headers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_headers.py',
+   'PYMODULE'),
+  ('h11._events',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_events.py',
+   'PYMODULE'),
+  ('h11',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\__init__.py',
+   'PYMODULE'),
+  ('h11._version',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\h11\\_version.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http.flow_control',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\flow_control.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http.auto',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\auto.py',
+   'PYMODULE'),
+  ('uvicorn.protocols.http',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\http\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.protocols',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\protocols\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.middleware.wsgi',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\wsgi.py',
+   'PYMODULE'),
+  ('uvicorn.middleware.proxy_headers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\proxy_headers.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ipaddress.py',
+   'PYMODULE'),
+  ('uvicorn.middleware.message_logger',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\message_logger.py',
+   'PYMODULE'),
+  ('uvicorn.middleware.asgi2',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\asgi2.py',
+   'PYMODULE'),
+  ('uvicorn.middleware',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\middleware\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.main',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\main.py',
+   'PYMODULE'),
+  ('configparser',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\configparser.py',
+   'PYMODULE'),
+  ('uvicorn.loops.uvloop',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\loops\\uvloop.py',
+   'PYMODULE'),
+  ('uvicorn.loops.auto',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\loops\\auto.py',
+   'PYMODULE'),
+  ('uvicorn.loops.asyncio',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\loops\\asyncio.py',
+   'PYMODULE'),
+  ('uvicorn.loops',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\loops\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.logging',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\logging.py',
+   'PYMODULE'),
+  ('uvicorn.lifespan.on',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\lifespan\\on.py',
+   'PYMODULE'),
+  ('uvicorn.lifespan.off',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\lifespan\\off.py',
+   'PYMODULE'),
+  ('uvicorn.lifespan',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\lifespan\\__init__.py',
+   'PYMODULE'),
+  ('uvicorn.importer',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\importer.py',
+   'PYMODULE'),
+  ('uvicorn.config',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\config.py',
+   'PYMODULE'),
+  ('logging.config',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\logging\\config.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\socketserver.py',
+   'PYMODULE'),
+  ('logging.handlers',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\logging\\handlers.py',
+   'PYMODULE'),
+  ('smtplib',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\smtplib.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('uvicorn._types',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\_types.py',
+   'PYMODULE'),
+  ('uvicorn._subprocess',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\_subprocess.py',
+   'PYMODULE'),
+  ('uvicorn.__main__',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\__main__.py',
+   'PYMODULE'),
+  ('fastapi.websockets',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\websockets.py',
+   'PYMODULE'),
+  ('starlette.websockets',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\websockets.py',
+   'PYMODULE'),
+  ('starlette',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\__init__.py',
+   'PYMODULE'),
+  ('starlette.status',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\status.py',
+   'PYMODULE'),
+  ('starlette.types',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\types.py',
+   'PYMODULE'),
+  ('starlette.responses',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\responses.py',
+   'PYMODULE'),
+  ('starlette.datastructures',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\datastructures.py',
+   'PYMODULE'),
+  ('starlette.concurrency',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\concurrency.py',
+   'PYMODULE'),
+  ('starlette.background',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\background.py',
+   'PYMODULE'),
+  ('starlette._utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\_utils.py',
+   'PYMODULE'),
+  ('anyio.to_thread',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\to_thread.py',
+   'PYMODULE'),
+  ('anyio.abc',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\abc\\__init__.py',
+   'PYMODULE'),
+  ('anyio.from_thread',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\from_thread.py',
+   'PYMODULE'),
+  ('anyio._core',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\__init__.py',
+   'PYMODULE'),
+  ('anyio._core._tasks',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_tasks.py',
+   'PYMODULE'),
+  ('anyio._core._synchronization',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_synchronization.py',
+   'PYMODULE'),
+  ('anyio._core._testing',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_testing.py',
+   'PYMODULE'),
+  ('anyio._core._exceptions',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_exceptions.py',
+   'PYMODULE'),
+  ('anyio.lowlevel',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\lowlevel.py',
+   'PYMODULE'),
+  ('sniffio',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\sniffio\\__init__.py',
+   'PYMODULE'),
+  ('sniffio._impl',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\sniffio\\_impl.py',
+   'PYMODULE'),
+  ('sniffio._version',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\sniffio\\_version.py',
+   'PYMODULE'),
+  ('anyio.abc._testing',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\abc\\_testing.py',
+   'PYMODULE'),
+  ('anyio.abc._tasks',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\abc\\_tasks.py',
+   'PYMODULE'),
+  ('anyio.abc._subprocesses',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\abc\\_subprocesses.py',
+   'PYMODULE'),
+  ('anyio.abc._streams',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\abc\\_streams.py',
+   'PYMODULE'),
+  ('anyio._core._typedattr',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_typedattr.py',
+   'PYMODULE'),
+  ('anyio.abc._sockets',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\abc\\_sockets.py',
+   'PYMODULE'),
+  ('anyio._core._sockets',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_sockets.py',
+   'PYMODULE'),
+  ('idna',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.core',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\idna\\uts46data.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('anyio._core._resources',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_resources.py',
+   'PYMODULE'),
+  ('anyio.streams.tls',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\streams\\tls.py',
+   'PYMODULE'),
+  ('anyio.streams',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\streams\\__init__.py',
+   'PYMODULE'),
+  ('anyio.streams.stapled',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\streams\\stapled.py',
+   'PYMODULE'),
+  ('anyio.abc._resources',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\abc\\_resources.py',
+   'PYMODULE'),
+  ('anyio.abc._eventloop',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\abc\\_eventloop.py',
+   'PYMODULE'),
+  ('anyio._core._eventloop',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_eventloop.py',
+   'PYMODULE'),
+  ('anyio',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\__init__.py',
+   'PYMODULE'),
+  ('anyio._backends._trio',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_backends\\_trio.py',
+   'PYMODULE'),
+  ('anyio.streams.memory',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\streams\\memory.py',
+   'PYMODULE'),
+  ('anyio._backends._asyncio',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_backends\\_asyncio.py',
+   'PYMODULE'),
+  ('anyio._core._asyncio_selector_thread',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_asyncio_selector_thread.py',
+   'PYMODULE'),
+  ('anyio._backends',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_backends\\__init__.py',
+   'PYMODULE'),
+  ('anyio._core._tempfile',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_tempfile.py',
+   'PYMODULE'),
+  ('anyio._core._subprocesses',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_subprocesses.py',
+   'PYMODULE'),
+  ('anyio._core._streams',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_streams.py',
+   'PYMODULE'),
+  ('anyio._core._signals',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_signals.py',
+   'PYMODULE'),
+  ('anyio._core._fileio',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\anyio\\_core\\_fileio.py',
+   'PYMODULE'),
+  ('starlette.requests',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\requests.py',
+   'PYMODULE'),
+  ('multipart.multipart',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\multipart\\multipart.py',
+   'PYMODULE'),
+  ('multipart',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\multipart\\__init__.py',
+   'PYMODULE'),
+  ('starlette.routing',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\routing.py',
+   'PYMODULE'),
+  ('starlette.middleware',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\__init__.py',
+   'PYMODULE'),
+  ('starlette.convertors',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\convertors.py',
+   'PYMODULE'),
+  ('starlette._exception_handler',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\_exception_handler.py',
+   'PYMODULE'),
+  ('starlette.applications',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\applications.py',
+   'PYMODULE'),
+  ('starlette.middleware.exceptions',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\exceptions.py',
+   'PYMODULE'),
+  ('starlette.middleware.errors',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\errors.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\html\\entities.py',
+   'PYMODULE'),
+  ('starlette.middleware.base',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\base.py',
+   'PYMODULE'),
+  ('starlette.formparsers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\formparsers.py',
+   'PYMODULE'),
+  ('starlette.exceptions',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\exceptions.py',
+   'PYMODULE'),
+  ('fastapi.utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\utils.py',
+   'PYMODULE'),
+  ('pydantic.fields',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\fields.py',
+   'PYMODULE'),
+  ('pydantic.warnings',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\warnings.py',
+   'PYMODULE'),
+  ('pydantic.version',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\version.py',
+   'PYMODULE'),
+  ('pydantic._internal._git',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_git.py',
+   'PYMODULE'),
+  ('pydantic_core.core_schema',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic_core\\core_schema.py',
+   'PYMODULE'),
+  ('pydantic.json_schema',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\json_schema.py',
+   'PYMODULE'),
+  ('pydantic.type_adapter',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\type_adapter.py',
+   'PYMODULE'),
+  ('pydantic.plugin._schema_validator',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\plugin\\_schema_validator.py',
+   'PYMODULE'),
+  ('pydantic.plugin._loader',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\plugin\\_loader.py',
+   'PYMODULE'),
+  ('pydantic.plugin',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\plugin\\__init__.py',
+   'PYMODULE'),
+  ('pydantic._internal._generate_schema',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_generate_schema.py',
+   'PYMODULE'),
+  ('pydantic.dataclasses',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\dataclasses.py',
+   'PYMODULE'),
+  ('pydantic._migration',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_migration.py',
+   'PYMODULE'),
+  ('pydantic.v1',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.v1.version',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\version.py',
+   'PYMODULE'),
+  ('pydantic.v1.types',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\types.py',
+   'PYMODULE'),
+  ('pydantic.v1.typing',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\typing.py',
+   'PYMODULE'),
+  ('pydantic.v1.validators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\validators.py',
+   'PYMODULE'),
+  ('pydantic.v1.utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\utils.py',
+   'PYMODULE'),
+  ('pydantic.v1.datetime_parse',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\datetime_parse.py',
+   'PYMODULE'),
+  ('pydantic.v1.tools',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\tools.py',
+   'PYMODULE'),
+  ('pydantic.v1.parse',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\parse.py',
+   'PYMODULE'),
+  ('pydantic.v1.networks',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\networks.py',
+   'PYMODULE'),
+  ('pydantic.v1.main',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\main.py',
+   'PYMODULE'),
+  ('pydantic.v1.schema',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\schema.py',
+   'PYMODULE'),
+  ('pydantic.v1.json',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\json.py',
+   'PYMODULE'),
+  ('pydantic.v1.color',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\color.py',
+   'PYMODULE'),
+  ('colorsys',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\colorsys.py',
+   'PYMODULE'),
+  ('pydantic.v1.fields',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\fields.py',
+   'PYMODULE'),
+  ('pydantic.v1.error_wrappers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\error_wrappers.py',
+   'PYMODULE'),
+  ('pydantic.v1.env_settings',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\env_settings.py',
+   'PYMODULE'),
+  ('pydantic.v1.decorator',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\decorator.py',
+   'PYMODULE'),
+  ('pydantic.v1.config',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\config.py',
+   'PYMODULE'),
+  ('pydantic.v1.class_validators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\class_validators.py',
+   'PYMODULE'),
+  ('pydantic.v1.annotated_types',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\annotated_types.py',
+   'PYMODULE'),
+  ('pydantic.v1.dataclasses',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\dataclasses.py',
+   'PYMODULE'),
+  ('pydantic.v1.errors',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\errors.py',
+   'PYMODULE'),
+  ('pydantic._internal._serializers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_serializers.py',
+   'PYMODULE'),
+  ('pydantic._internal._validators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_validators.py',
+   'PYMODULE'),
+  ('pydantic._internal._schema_gather',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_schema_gather.py',
+   'PYMODULE'),
+  ('pydantic._internal._import_utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_import_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._forward_ref',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_forward_ref.py',
+   'PYMODULE'),
+  ('pydantic._internal._docs_extraction',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_docs_extraction.py',
+   'PYMODULE'),
+  ('pydantic._internal._known_annotated_metadata',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_known_annotated_metadata.py',
+   'PYMODULE'),
+  ('pydantic._internal._discriminated_union',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_discriminated_union.py',
+   'PYMODULE'),
+  ('pydantic.functional_validators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\functional_validators.py',
+   'PYMODULE'),
+  ('zoneinfo',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\zoneinfo\\__init__.py',
+   'PYMODULE'),
+  ('zoneinfo._zoneinfo',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\zoneinfo\\_zoneinfo.py',
+   'PYMODULE'),
+  ('zoneinfo._common',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\zoneinfo\\_common.py',
+   'PYMODULE'),
+  ('zoneinfo._tzpath',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\zoneinfo\\_tzpath.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\sysconfig.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_aix_support.py',
+   'PYMODULE'),
+  ('_bootsubprocess',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_bootsubprocess.py',
+   'PYMODULE'),
+  ('pydantic.root_model',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\root_model.py',
+   'PYMODULE'),
+  ('pydantic._internal._model_construction',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_model_construction.py',
+   'PYMODULE'),
+  ('pydantic._internal._signature',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_signature.py',
+   'PYMODULE'),
+  ('pydantic.main',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\main.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.json',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\json.py',
+   'PYMODULE'),
+  ('pydantic.networks',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\networks.py',
+   'PYMODULE'),
+  ('pydantic.color',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\color.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.copy_internals',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\copy_internals.py',
+   'PYMODULE'),
+  ('pydantic.deprecated',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.parse',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\parse.py',
+   'PYMODULE'),
+  ('pydantic._internal._dataclasses',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_dataclasses.py',
+   'PYMODULE'),
+  ('pydantic.annotated_handlers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\annotated_handlers.py',
+   'PYMODULE'),
+  ('pydantic._internal._schema_generation_shared',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_schema_generation_shared.py',
+   'PYMODULE'),
+  ('pydantic._internal._mock_val_ser',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_mock_val_ser.py',
+   'PYMODULE'),
+  ('pydantic._internal._core_utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_core_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._core_metadata',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_core_metadata.py',
+   'PYMODULE'),
+  ('pydantic._internal._config',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_config.py',
+   'PYMODULE'),
+  ('pydantic.errors',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\errors.py',
+   'PYMODULE'),
+  ('pydantic.config',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\config.py',
+   'PYMODULE'),
+  ('pydantic.aliases',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\aliases.py',
+   'PYMODULE'),
+  ('pydantic._internal._namespace_utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_namespace_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_utils.py',
+   'PYMODULE'),
+  ('pydantic._internal._typing_extra',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_typing_extra.py',
+   'PYMODULE'),
+  ('pydantic._internal._repr',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_repr.py',
+   'PYMODULE'),
+  ('pydantic._internal._internal_dataclass',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_internal_dataclass.py',
+   'PYMODULE'),
+  ('pydantic._internal._generics',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_generics.py',
+   'PYMODULE'),
+  ('pydantic._internal._fields',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_fields.py',
+   'PYMODULE'),
+  ('pydantic._internal._decorators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_decorators.py',
+   'PYMODULE'),
+  ('pydantic._internal',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\__init__.py',
+   'PYMODULE'),
+  ('pydantic._internal._decorators_v1',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_decorators_v1.py',
+   'PYMODULE'),
+  ('pydantic._internal._validate_call',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\_internal\\_validate_call.py',
+   'PYMODULE'),
+  ('pydantic.types',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\types.py',
+   'PYMODULE'),
+  ('typing_inspection.introspection',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\typing_inspection\\introspection.py',
+   'PYMODULE'),
+  ('typing_inspection.typing_objects',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\typing_inspection\\typing_objects.py',
+   'PYMODULE'),
+  ('typing_inspection',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\typing_inspection\\__init__.py',
+   'PYMODULE'),
+  ('pydantic_core',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic_core\\__init__.py',
+   'PYMODULE'),
+  ('annotated_types',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\annotated_types\\__init__.py',
+   'PYMODULE'),
+  ('fastapi.types',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\types.py',
+   'PYMODULE'),
+  ('fastapi.testclient',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\testclient.py',
+   'PYMODULE'),
+  ('starlette.testclient',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\testclient.py',
+   'PYMODULE'),
+  ('fastapi.templating',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\templating.py',
+   'PYMODULE'),
+  ('starlette.templating',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\templating.py',
+   'PYMODULE'),
+  ('fastapi.staticfiles',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\staticfiles.py',
+   'PYMODULE'),
+  ('starlette.staticfiles',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\staticfiles.py',
+   'PYMODULE'),
+  ('fastapi.security.utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\utils.py',
+   'PYMODULE'),
+  ('fastapi.security.open_id_connect_url',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\open_id_connect_url.py',
+   'PYMODULE'),
+  ('fastapi.security.oauth2',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\oauth2.py',
+   'PYMODULE'),
+  ('fastapi.security.http',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\http.py',
+   'PYMODULE'),
+  ('fastapi.security.base',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\base.py',
+   'PYMODULE'),
+  ('fastapi.security.api_key',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\api_key.py',
+   'PYMODULE'),
+  ('fastapi.security',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\security\\__init__.py',
+   'PYMODULE'),
+  ('fastapi.routing',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\routing.py',
+   'PYMODULE'),
+  ('fastapi.requests',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\requests.py',
+   'PYMODULE'),
+  ('fastapi.params',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\params.py',
+   'PYMODULE'),
+  ('fastapi.param_functions',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\param_functions.py',
+   'PYMODULE'),
+  ('fastapi.openapi.utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\utils.py',
+   'PYMODULE'),
+  ('fastapi.openapi.models',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\models.py',
+   'PYMODULE'),
+  ('fastapi.openapi.docs',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\docs.py',
+   'PYMODULE'),
+  ('fastapi.openapi.constants',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\constants.py',
+   'PYMODULE'),
+  ('fastapi.openapi',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\openapi\\__init__.py',
+   'PYMODULE'),
+  ('fastapi.middleware.wsgi',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\wsgi.py',
+   'PYMODULE'),
+  ('starlette.middleware.wsgi',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\wsgi.py',
+   'PYMODULE'),
+  ('fastapi.middleware.trustedhost',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\trustedhost.py',
+   'PYMODULE'),
+  ('starlette.middleware.trustedhost',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\trustedhost.py',
+   'PYMODULE'),
+  ('fastapi.middleware.httpsredirect',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\httpsredirect.py',
+   'PYMODULE'),
+  ('starlette.middleware.httpsredirect',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\httpsredirect.py',
+   'PYMODULE'),
+  ('fastapi.middleware.gzip',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\gzip.py',
+   'PYMODULE'),
+  ('starlette.middleware.gzip',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\gzip.py',
+   'PYMODULE'),
+  ('fastapi.middleware',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\__init__.py',
+   'PYMODULE'),
+  ('fastapi.logger',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\logger.py',
+   'PYMODULE'),
+  ('fastapi.exceptions',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\exceptions.py',
+   'PYMODULE'),
+  ('fastapi.exception_handlers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\exception_handlers.py',
+   'PYMODULE'),
+  ('fastapi.encoders',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\encoders.py',
+   'PYMODULE'),
+  ('fastapi.dependencies.utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\dependencies\\utils.py',
+   'PYMODULE'),
+  ('fastapi.dependencies.models',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\dependencies\\models.py',
+   'PYMODULE'),
+  ('fastapi.dependencies',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\dependencies\\__init__.py',
+   'PYMODULE'),
+  ('fastapi.datastructures',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\datastructures.py',
+   'PYMODULE'),
+  ('fastapi.concurrency',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\concurrency.py',
+   'PYMODULE'),
+  ('fastapi.cli',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\cli.py',
+   'PYMODULE'),
+  ('fastapi.background',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\background.py',
+   'PYMODULE'),
+  ('fastapi.applications',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\applications.py',
+   'PYMODULE'),
+  ('fastapi._compat',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\_compat.py',
+   'PYMODULE'),
+  ('pydantic.utils',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\utils.py',
+   'PYMODULE'),
+  ('pydantic.typing',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\typing.py',
+   'PYMODULE'),
+  ('pydantic.schema',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\schema.py',
+   'PYMODULE'),
+  ('pydantic.error_wrappers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\error_wrappers.py',
+   'PYMODULE'),
+  ('pydantic.class_validators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\class_validators.py',
+   'PYMODULE'),
+  ('fastapi.__main__',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\__main__.py',
+   'PYMODULE'),
+  ('python_multipart.multipart',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\python_multipart\\multipart.py',
+   'PYMODULE'),
+  ('python_multipart.exceptions',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\python_multipart\\exceptions.py',
+   'PYMODULE'),
+  ('python_multipart.decoders',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\python_multipart\\decoders.py',
+   'PYMODULE'),
+  ('python_multipart',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\python_multipart\\__init__.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_py_abc.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\stringprep.py',
+   'PYMODULE'),
+  ('uvicorn',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\uvicorn\\__init__.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\ast.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\datetime.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\typing.py',
+   'PYMODULE'),
+  ('pydantic',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.validators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\validators.py',
+   'PYMODULE'),
+  ('pydantic.v1.mypy',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\mypy.py',
+   'PYMODULE'),
+  ('tomllib',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tomllib\\__init__.py',
+   'PYMODULE'),
+  ('tomllib._parser',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tomllib\\_parser.py',
+   'PYMODULE'),
+  ('tomllib._types',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tomllib\\_types.py',
+   'PYMODULE'),
+  ('tomllib._re',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\tomllib\\_re.py',
+   'PYMODULE'),
+  ('pydantic.v1.generics',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\generics.py',
+   'PYMODULE'),
+  ('pydantic.v1._hypothesis_plugin',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\v1\\_hypothesis_plugin.py',
+   'PYMODULE'),
+  ('pydantic.tools',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\tools.py',
+   'PYMODULE'),
+  ('pydantic.parse',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\parse.py',
+   'PYMODULE'),
+  ('pydantic.mypy',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\mypy.py',
+   'PYMODULE'),
+  ('pydantic.json',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\json.py',
+   'PYMODULE'),
+  ('pydantic.generics',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\generics.py',
+   'PYMODULE'),
+  ('pydantic.experimental.pipeline',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\experimental\\pipeline.py',
+   'PYMODULE'),
+  ('pydantic.experimental.arguments_schema',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\experimental\\arguments_schema.py',
+   'PYMODULE'),
+  ('pydantic.experimental',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\experimental\\__init__.py',
+   'PYMODULE'),
+  ('pydantic.env_settings',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\env_settings.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.decorator',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\decorator.py',
+   'PYMODULE'),
+  ('pydantic.decorator',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\decorator.py',
+   'PYMODULE'),
+  ('pydantic.datetime_parse',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\datetime_parse.py',
+   'PYMODULE'),
+  ('pydantic.alias_generators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\alias_generators.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.tools',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\tools.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.config',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\config.py',
+   'PYMODULE'),
+  ('pydantic.deprecated.class_validators',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\deprecated\\class_validators.py',
+   'PYMODULE'),
+  ('pydantic.validate_call_decorator',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\validate_call_decorator.py',
+   'PYMODULE'),
+  ('pydantic.functional_serializers',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic\\functional_serializers.py',
+   'PYMODULE'),
+  ('fastapi.responses',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\responses.py',
+   'PYMODULE'),
+  ('fastapi.middleware.cors',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\middleware\\cors.py',
+   'PYMODULE'),
+  ('starlette.middleware.cors',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\starlette\\middleware\\cors.py',
+   'PYMODULE'),
+  ('fastapi',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\fastapi\\__init__.py',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\csv.py',
+   'PYMODULE')],
+ [('python311.dll',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\python311.dll',
+   'BINARY'),
+  ('select.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_uuid.pyd',
+   'EXTENSION'),
+  ('pydantic_core\\_pydantic_core.cp311-win_amd64.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\pydantic_core\\_pydantic_core.cp311-win_amd64.pyd',
+   'EXTENSION'),
+  ('_zoneinfo.pyd',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_zoneinfo.pyd',
+   'EXTENSION'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('libcrypto-1_1.dll',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\libcrypto-1_1.dll',
+   'BINARY'),
+  ('libssl-1_1.dll',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\libssl-1_1.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Users\\João '
+   'Oliveira\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\libffi-8.dll',
+   'BINARY')],
+ [],
+ [],
+ [('clientes.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\clientes.csv',
+   'DATA'),
+  ('encomendas.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\encomendas.csv',
+   'DATA'),
+  ('ingredientes.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\ingredientes.csv',
+   'DATA'),
+  ('produtos.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\produtos.csv',
+   'DATA'),
+  ('receitas.csv',
+   'C:\\Users\\João Oliveira\\Desktop\\cookies_rita\\backend\\receitas.csv',
+   'DATA'),
+  ('click-8.2.0.dist-info\\METADATA',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click-8.2.0.dist-info\\METADATA',
+   'DATA'),
+  ('click-8.2.0.dist-info\\licenses\\LICENSE.txt',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click-8.2.0.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('click-8.2.0.dist-info\\INSTALLER',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click-8.2.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.2.0.dist-info\\RECORD',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click-8.2.0.dist-info\\RECORD',
+   'DATA'),
+  ('click-8.2.0.dist-info\\WHEEL',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\venv\\Lib\\site-packages\\click-8.2.0.dist-info\\WHEEL',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\João '
+   'Oliveira\\Desktop\\cookies_rita\\backend\\build\\app\\base_library.zip',
+   'DATA')])
