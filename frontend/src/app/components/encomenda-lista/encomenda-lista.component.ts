@@ -27,7 +27,7 @@ export class EncomendaListaComponent {
   encomendas: Encomenda[] = [];
   produtos: Produto[] = [];
   clientes: Cliente[] = [];
-  displayedColumns: string[] = ['id', 'cliente_id', 'ingredientes', 'total', 'timestamp', 'actions'];
+  displayedColumns: string[] = ['id', 'cliente_id', 'ingredientes', 'total', 'timestamp', 'data_entrega', 'actions'];
   encomendaForm: FormGroup;
   editMode: boolean = false;
   editingId: number | null = null;
@@ -44,7 +44,8 @@ export class EncomendaListaComponent {
     this.encomendaForm = this.fb.group({
       cliente_id: ['', [Validators.required, Validators.pattern('^[1-9][0-9]*$')]],
       cliente_nome: ['', []],
-      ingredientes: this.fb.array([], [this.atLeastOneItemValidator()])
+      ingredientes: this.fb.array([], [this.atLeastOneItemValidator()]),
+      data_entrega: [this.getDefaultEntregaDate(), Validators.required]
     });
     this.loadEncomendas();
     this.loadProdutos();
@@ -122,6 +123,12 @@ export class EncomendaListaComponent {
     return sum;
   }
 
+  getDefaultEntregaDate(): string {
+    const date = new Date();
+    date.setDate(date.getDate() + 7);
+    return date.toISOString().slice(0, 16);
+  }
+
   adicionarEncomenda() {
     if (this.encomendaForm.valid) {
       // Filter out ingredientes with invalid id
@@ -147,13 +154,15 @@ export class EncomendaListaComponent {
         cliente_id: this.encomendaForm.value.cliente_id,
         ingredientes: ingredientesValidos,
         total: parseFloat(this.total.toFixed(2)),
-        timestamp: '' // Let backend set if not provided
+        timestamp: '', // Let backend set if not provided
+        data_entrega: this.encomendaForm.value.data_entrega || this.getDefaultEntregaDate()
       };
       if (this.editMode && this.editingId !== null) {
         this.encomendaService.atualizarEncomenda(encomendaData).subscribe(() => {
           this.snackBar.open('Pedido atualizado com sucesso!', 'Fechar', { duration: 2000 });
           this.encomendaForm.reset();
           this.encomendaForm.setControl('ingredientes', this.fb.array([]));
+          this.encomendaForm.get('data_entrega')?.setValue(this.getDefaultEntregaDate());
           this.editMode = false;
           this.editingId = null;
           this.loadEncomendas();
@@ -163,6 +172,7 @@ export class EncomendaListaComponent {
           this.snackBar.open('Pedido adicionado com sucesso!', 'Fechar', { duration: 2000 });
           this.encomendaForm.reset();
           this.encomendaForm.setControl('ingredientes', this.fb.array([]));
+          this.encomendaForm.get('data_entrega')?.setValue(this.getDefaultEntregaDate());
           this.loadEncomendas();
         });
       }
@@ -202,7 +212,8 @@ export class EncomendaListaComponent {
     this.editMode = true;
     this.editingId = encomenda.id;
     this.encomendaForm.patchValue({
-      cliente_id: encomenda.cliente_id
+      cliente_id: encomenda.cliente_id,
+      data_entrega: encomenda.data_entrega ? encomenda.data_entrega.slice(0, 16) : this.getDefaultEntregaDate()
     });
     // Clear and repopulate ingredientes
     this.ingredientes.clear();

@@ -41,11 +41,11 @@
   ```
 - Install dependencies:
   ```sh
-  pip install fastapi uvicorn
+  pip install -r requirements.txt
   ```
 - Start the backend server:
   ```sh
-  uvicorn main:app --reload
+  python app.py
   ```
 - The API will be available at `http://127.0.0.1:8000/`
 
@@ -89,14 +89,23 @@
 ```
 cookies_rita/
 ├── backend/
-│   ├── main.py              # FastAPI backend
-│   ├── calendar-events.json # Calendar event storage (JSON)
-│   ├── clientes.csv         # Clients data
-│   ├── ingredientes.csv     # Ingredients data
-│   ├── produtos.csv         # Products data
-│   ├── receitas.csv         # Recipes data
-│   ├── encomendas.csv       # Orders data
-│   └── ...
+│   ├── app.py              # FastAPI backend entry point
+│   ├── requirements.txt
+│   ├── config/
+│   │   ├── settings.py
+│   │   └── logging.conf
+│   ├── data/
+│   │   ├── clientes.csv
+│   │   ├── encomendas.csv
+│   │   ├── ingredientes.csv
+│   │   ├── produtos.csv
+│   │   ├── receitas.csv
+│   │   └── calendar-events.json
+│   ├── logs/
+│   └── src/
+│       ├── api/
+│       ├── models/
+│       └── services/
 ├── frontend/
 │   ├── src/app/components/  # Angular components (calendar, etc.)
 │   ├── src/app/services/    # Angular services (API calls)
@@ -122,7 +131,7 @@ cookies_rita/
   - Check Node.js version
   - Run `npm install` again if you see missing module errors
 - **Data not saving?**
-  - Make sure the backend has write permissions to the data files
+  - Make sure the backend has write permissions to the files in `backend/data/`
 - **Import/Export issues?**
   - Ensure the file format matches the expected structure (see sample export)
 

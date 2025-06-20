@@ -11,6 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MatSelectModule } from '@angular/material/select';
+import { forkJoin, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 @Component({
   selector: 'app-receita-lista',
@@ -61,7 +63,7 @@ export class ReceitaListaComponent {
 
   loadReceitas() {
     this.receitaService.getReceitas().subscribe(data => {
-      this.receitas = data;
+      this.receitas = data.sort((a, b) => a.id - b.id);
     });
   }
 
@@ -157,26 +159,21 @@ export class ReceitaListaComponent {
 
   onFileSelected(event: Event) {
     const input = event.target as HTMLInputElement;
-    if (!input.files?.length) return;
+    if (!input.files?.length) {
+      return;
+    }
     const file = input.files[0];
-    const reader = new FileReader();
-    reader.onload = (e: any) => {
-      const text = e.target.result;
-      const lines = (text as string).split('\n').filter(l => l.trim());
-      const receitas: any[] = [];
-      for (let i = 1; i < lines.length; i++) {
-        const [id, nome, descricao, ingredientes] = lines[i].split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/);
-        receitas.push({
-          id: Number(id),
-          nome: nome.replace(/"/g, ''),
-          descricao: descricao.replace(/"/g, ''),
-          ingredientes: JSON.parse(ingredientes.replace(/"/g, ''))
-        });
-      }
-      // Optionally, replace all receitas or merge
-      this.receitas = receitas;
-    };
-    reader.readAsText(file);
+    if (file) {
+      this.receitaService.importarReceitas(file).subscribe({
+        next: () => {
+          this.snackBar.open('Receitas importadas com sucesso!', 'Fechar', { duration: 2000 });
+          this.loadReceitas(); // Reload the list to show the new data
+        },
+        error: (err) => {
+          this.snackBar.open(`Erro ao importar receitas: ${err.error.error || 'Erro desconhecido'}`, 'Fechar', { duration: 3000 });
+        }
+      });
+    }
   }
 
   getIngredienteNome(id: number): string {

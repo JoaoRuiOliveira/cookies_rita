@@ -28,6 +28,10 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
+      <mat-form-field appearance="outline" class="data-entrega-field">
+        <mat-label>Data de Entrega</mat-label>
+        <input matInput type="datetime-local" formControlName="data_entrega" required />
+      </mat-form-field>
     </div>
     <mat-divider style="margin: 1rem 0 1.5rem 0;"></mat-divider>
     <div class="itens-card">
@@ -108,6 +112,10 @@
     <ng-container matColumnDef="total">
       <th mat-header-cell *matHeaderCellDef>Total (€)</th>
       <td mat-cell *matCellDef="let encomenda">{{ encomenda.total }}</td>
+    </ng-container>
+    <ng-container matColumnDef="data_entrega">
+      <th mat-header-cell *matHeaderCellDef>Data de Entrega</th>
+      <td mat-cell *matCellDef="let encomenda">{{ encomenda.data_entrega | date:'short' }}</td>
     </ng-container>
     <ng-container matColumnDef="timestamp">
       <th mat-header-cell *matHeaderCellDef>Data do Pedido</th>

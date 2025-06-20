@@ -14,6 +14,7 @@ export interface Encomenda {
   ingredientes: Ingrediente[];
   total: number;
   timestamp: string; // ISO date string
+  data_entrega: string; // ISO date string for delivery
 }
 
 @Injectable({

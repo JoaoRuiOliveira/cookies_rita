@@ -37,4 +37,10 @@ export class ReceitaService {
   deletarReceita(id: number): Observable<any> {
     return this.http.delete(`${this.apiUrl}/${id}`);
   }
+
+  importarReceitas(file: File): Observable<any> {
+    const formData = new FormData();
+    formData.append('file', file, file.name);
+    return this.http.post(`${this.apiUrl}/../import/receitas`, formData);
+  }
 } 

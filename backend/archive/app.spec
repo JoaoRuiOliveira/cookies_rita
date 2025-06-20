@@ -13,7 +13,7 @@ a = Analysis(
     ['app.py'],
     pathex=[],
     binaries=[],
-    datas=[('data/*.csv', 'data'), ('data/calendar-events.json', 'data')],  # Collect all data files
+    datas=[('*.csv', '.')],  # This will collect all CSV files
     hiddenimports=hiddenimports,
     hookspath=[],
     hooksconfig={},
@@ -43,4 +43,4 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-) 
+)

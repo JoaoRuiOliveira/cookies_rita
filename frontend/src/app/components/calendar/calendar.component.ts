@@ -689,9 +689,10 @@ export class CalendarComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
-    this.loadEvents();
     this.updateClock();
     this.clockInterval = setInterval(() => this.updateClock(), 1000);
+    this.currentDateString = this.currentDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    // this.loadEvents(); // Commented out to prevent 404
   }
 
   ngOnDestroy() {
@@ -881,30 +882,26 @@ export class CalendarComponent implements OnInit, OnDestroy {
   }
 
   getUpcomingImportantEvents(): CalendarEvent[] {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-
+    const now = new Date();
     return this.events
-      .filter(event => {
-        const eventDate = new Date(event.date);
-        eventDate.setHours(0, 0, 0, 0);
-        return event.isImportant && eventDate >= today;
-      })
-      .sort((a, b) => a.date.getTime() - b.date.getTime())
-      .slice(0, 5); // Show only the next 5 important events
+      .filter(e => e.isImportant && new Date(e.date) >= now)
+      .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+      .slice(0, 5);
   }
 
   loadEvents() {
-    this.calendarService.getEvents().subscribe(events => {
-      this.events = events.map(ev => ({
-        ...ev,
-        id: Number(ev.id),
-        date: new Date(ev.date),
-        startDate: ev.startDate ? new Date(ev.startDate) : undefined,
-        endDate: ev.endDate ? new Date(ev.endDate) : undefined
-      }));
-      this.updateCalendarDays();
-    });
+    // this.calendarService.getEvents().subscribe(
+    //   (data) => {
+    //     this.events = data.map(event => ({
+    //       ...event,
+    //       date: new Date(event.date),
+    //       startDate: event.startDate ? new Date(event.startDate) : undefined,
+    //       endDate: event.endDate ? new Date(event.endDate) : undefined
+    //     }));
+    //     this.updateCalendarDays();
+    //   },
+    //   (error) => console.error('Error loading events:', error)
+    // );
   }
 
   importEvents(event: any) {
