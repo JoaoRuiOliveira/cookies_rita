@@ -4,7 +4,30 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Unreleased] - 2024-06-24
+
+### Added
+- **Produtos Tab:** Added a complete "Produtos" (Products) management tab with full CRUD functionality.
+  - New product model with fields: id, nome (name), preco (price), estoque (stock).
+  - Complete frontend component with list, add, edit, delete, import, and export functionality.
+  - Backend API integration for all product operations.
+  - Consistent UI design matching other tabs in the application.
+- **Product Inventory Management:** Users can now manage their product inventory with real-time updates and persistent storage.
+
+### Fixed
+- **FormGroup Type Errors:** Fixed Angular compilation errors related to `FormGroup<any> | null` type mismatches in the produto-lista component.
+  - Added proper null checks with `*ngIf="editForm"` directives to prevent runtime errors.
+  - Aligned edit/delete logic with working patterns from other tabs.
+- **File Path Consistency:** Resolved inconsistencies between `backend/data/` and `backend/src/data/` directories.
+  - Removed duplicate data directory and ensured all components use the correct `backend/data/` path.
+  - Updated settings to resolve data directory regardless of working directory.
+- **CSV Import Robustness:** Improved CSV parsing to handle various delimiter types and encoding issues.
+  - Backend now attempts multiple delimiter strategies (comma, semicolon) for better compatibility.
+  - Enhanced error handling for malformed CSV files.
+
+### Changed
+- **Export File Naming:** Updated all export functions to use default filenames with entity name and current date (e.g., `produtos-2024-06-24.csv`).
+- **Backend Import Logic:** Removed automatic backup creation during imports to prevent file lock issues on Windows systems.
 
 ---
 
