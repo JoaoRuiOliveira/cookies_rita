@@ -7,6 +7,7 @@ import { IngredienteListaComponent } from './components/ingrediente-lista/ingred
 import { EncomendaListaComponent } from './components/encomenda-lista/encomenda-lista.component';
 import { ReceitaListaComponent } from './components/receita-lista/receita-lista.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
+import { ProdutoListaComponent } from './components/produto-lista/produto-lista.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { CalendarComponent } from './components/calendar/calendar.component';
     IngredienteListaComponent,
     EncomendaListaComponent,
     ReceitaListaComponent,
-    CalendarComponent
+    CalendarComponent,
+    ProdutoListaComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

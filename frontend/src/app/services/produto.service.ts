@@ -20,4 +20,22 @@ export class ProdutoService {
   getProdutos(): Observable<Produto[]> {
     return this.http.get<Produto[]>(this.apiUrl + '/');
   }
+
+  adicionarProduto(produto: Produto): Observable<Produto> {
+    return this.http.post<Produto>(this.apiUrl + '/', produto);
+  }
+
+  importarProdutos(file: File): Observable<any> {
+    const formData = new FormData();
+    formData.append('file', file, file.name);
+    return this.http.post('http://127.0.0.1:8000/import/produtos', formData);
+  }
+
+  atualizarProduto(produto: Produto): Observable<Produto> {
+    return this.http.put<Produto>(`${this.apiUrl}/${produto.id}`, produto);
+  }
+
+  deletarProduto(id: number): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/${id}`);
+  }
 } 

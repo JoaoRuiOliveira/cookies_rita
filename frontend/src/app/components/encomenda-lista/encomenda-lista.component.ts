@@ -202,7 +202,9 @@ export class EncomendaListaComponent {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'encomendas.csv';
+      const today = new Date();
+      const dateStr = today.toISOString().slice(0, 10); // YYYY-MM-DD
+      a.download = `encomendas-${dateStr}.csv`;
       a.click();
       window.URL.revokeObjectURL(url);
     });

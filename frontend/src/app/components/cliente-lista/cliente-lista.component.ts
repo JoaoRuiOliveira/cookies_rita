@@ -72,7 +72,9 @@ export class ClienteListaComponent {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'clientes.csv';
+      const today = new Date();
+      const dateStr = today.toISOString().slice(0, 10); // YYYY-MM-DD
+      a.download = `clientes-${dateStr}.csv`;
       a.click();
       window.URL.revokeObjectURL(url);
     });

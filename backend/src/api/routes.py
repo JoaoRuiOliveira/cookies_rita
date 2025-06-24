@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse, FileResponse
 from datetime import datetime
 import os
 from typing import List
+import logging
 
 from models.base_models import Cliente, Ingrediente, Encomenda, Produto, Receita
 from services.csv_service import CSVService
@@ -111,8 +112,6 @@ def import_ingredientes(file: UploadFile = File(...)):
         csv.Sniffer().sniff(contents.decode('utf-8'))
     except Exception:
         return JSONResponse(content={"error": "Arquivo CSV inválido."}, status_code=400)
-    if os.path.exists(INGREDIENTES_CSV):
-        os.rename(INGREDIENTES_CSV, str(INGREDIENTES_CSV) + ".bak")
     with open(INGREDIENTES_CSV, "wb") as f:
         f.write(contents)
     return JSONResponse(content={"message": "Importação concluída!"})
@@ -129,8 +128,6 @@ def import_encomendas(file: UploadFile = File(...)):
         csv.Sniffer().sniff(contents.decode('utf-8'))
     except Exception:
         return JSONResponse(content={"error": "Arquivo CSV inválido."}, status_code=400)
-    if os.path.exists(ENCOMENDAS_CSV):
-        os.rename(ENCOMENDAS_CSV, str(ENCOMENDAS_CSV) + ".bak")
     with open(ENCOMENDAS_CSV, "wb") as f:
         f.write(contents)
     return JSONResponse(content={"message": "Importação concluída!"})
@@ -147,8 +144,6 @@ def import_clientes(file: UploadFile = File(...)):
         csv.Sniffer().sniff(contents.decode('utf-8'))
     except Exception:
         return JSONResponse(content={"error": "Arquivo CSV inválido."}, status_code=400)
-    if os.path.exists(CLIENTES_CSV):
-        os.rename(CLIENTES_CSV, str(CLIENTES_CSV) + ".bak")
     with open(CLIENTES_CSV, "wb") as f:
         f.write(contents)
     return JSONResponse(content={"message": "Importação concluída!"})
@@ -165,8 +160,6 @@ def import_produtos(file: UploadFile = File(...)):
         csv.Sniffer().sniff(contents.decode('utf-8'))
     except Exception:
         return JSONResponse(content={"error": "Arquivo CSV inválido."}, status_code=400)
-    if os.path.exists(PRODUTOS_CSV):
-        os.rename(PRODUTOS_CSV, str(PRODUTOS_CSV) + ".bak")
     with open(PRODUTOS_CSV, "wb") as f:
         f.write(contents)
     return JSONResponse(content={"message": "Importação concluída!"})
@@ -183,32 +176,8 @@ def import_receitas(file: UploadFile = File(...)):
         csv.Sniffer().sniff(contents.decode('utf-8'))
     except Exception:
         return JSONResponse(content={"error": "Arquivo CSV inválido."}, status_code=400)
-    
-    # Sort the CSV by ID before saving
-    try:
-        decoded_content = contents.decode('utf-8')
-        lines = decoded_content.strip().split('\\n')
-        header = lines[0]
-        reader = csv.reader(lines[1:])
-        # Sort by the first column (ID), converting to int for correct numeric sorting
-        sorted_rows = sorted(reader, key=lambda row: int(row[0]))
-        
-        # Reconstruct the CSV content
-        import io
-        output = io.StringIO()
-        writer = csv.writer(output)
-        writer.writerow(header.split(','))
-        writer.writerows(sorted_rows)
-        sorted_contents = output.getvalue().encode('utf-8')
-    except Exception as e:
-        # If sorting fails, just use the original content but log the error
-        print(f"Could not sort CSV, saving as is. Error: {e}")
-        sorted_contents = contents
-
-    if os.path.exists(RECEITAS_CSV):
-        os.rename(RECEITAS_CSV, str(RECEITAS_CSV) + ".bak")
     with open(RECEITAS_CSV, "wb") as f:
-        f.write(sorted_contents)
+        f.write(contents)
     return JSONResponse(content={"message": "Importação concluída!"})
 
 # Export endpoints

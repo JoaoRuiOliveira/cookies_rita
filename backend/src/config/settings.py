@@ -1,8 +1,14 @@
 import os
 from pathlib import Path
 
-# Base directory
-BASE_DIR = Path(__file__).resolve().parent.parent
+# Always resolve BASE_DIR to the backend directory, no matter where this file is run from
+SETTINGS_PATH = Path(__file__).resolve()
+for parent in SETTINGS_PATH.parents:
+    if parent.name == 'backend':
+        BASE_DIR = parent
+        break
+else:
+    BASE_DIR = SETTINGS_PATH.parent  # fallback, should never happen
 
 # Data directory
 DATA_DIR = BASE_DIR / "data"

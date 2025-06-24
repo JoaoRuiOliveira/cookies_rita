@@ -119,7 +119,9 @@ export class IngredienteListaComponent {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'ingredientes.csv';
+      const today = new Date();
+      const dateStr = today.toISOString().slice(0, 10); // YYYY-MM-DD
+      a.download = `ingredientes-${dateStr}.csv`;
       a.click();
       window.URL.revokeObjectURL(url);
     });

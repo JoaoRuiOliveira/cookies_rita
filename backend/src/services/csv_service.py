@@ -4,6 +4,7 @@ import ast
 from typing import List, Type, TypeVar
 from pydantic import BaseModel
 from models.base_models import Cliente, Ingrediente, Encomenda, Produto, ReceitaIngrediente, Receita
+import logging
 
 T = TypeVar('T', bound=BaseModel)
 
@@ -18,6 +19,7 @@ class CSVService:
     @staticmethod
     def read_csv(file_path: str, model_class: Type[T]) -> List[T]:
         """Read CSV file and return list of model instances"""
+        logger = logging.getLogger("csv_service")
         items = []
         if not os.path.exists(file_path):
             return items
@@ -49,17 +51,22 @@ class CSVService:
                         items.append(Produto(**row))
                     elif model_class == Receita:
                         row['id'] = int(row['id'])
-                        # Safely evaluate 'ingredientes' field
                         ingredientes_str = row.get('ingredientes', '[]')
                         try:
+                            # Fix for double quotes if present (from some CSV editors)
+                            if ingredientes_str.startswith('"') and ingredientes_str.endswith('"'):
+                                ingredientes_str = ingredientes_str[1:-1]
+                            # Replace escaped single quotes if present
+                            ingredientes_str = ingredientes_str.replace('"', "'")
                             ingredientes_list = ast.literal_eval(ingredientes_str)
                             row['ingredientes'] = [ReceitaIngrediente(**i) for i in ingredientes_list]
-                        except (ValueError, SyntaxError):
-                            row['ingredientes'] = [] # Default to empty list on parsing error
+                        except Exception as e:
+                            logger.error(f"Error parsing ingredientes for receita id={row.get('id')}: {e}. Value: {ingredientes_str}")
+                            raise ValueError(f"Erro ao importar ingredientes da receita id={row.get('id')}: {e}")
                         items.append(Receita(**row))
                 except (ValueError, KeyError, TypeError) as e:
-                    print(f"Error processing row: {row}. Error: {e}") # Or use a proper logger
-        
+                    logger.error(f"Error processing row: {row}. Error: {e}")
+                    raise
         return items
 
     @staticmethod

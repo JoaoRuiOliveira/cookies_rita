@@ -1,0 +1,89 @@
+<div class="produto-lista-container">
+  <div class="produto-header-row">
+    <div class="produto-header-title">
+      <mat-icon style="vertical-align: middle; color: #8D5524;">inventory_2</mat-icon> Produtos
+    </div>
+    <div class="import-section">
+      <button mat-stroked-button color="accent" (click)="fileInput.click()">Importar CSV</button>
+      <button mat-stroked-button color="primary" (click)="exportCSV()">Exportar CSV</button>
+      <input #fileInput type="file" accept=".csv" style="display:none" (change)="onFileSelected($event)" />
+    </div>
+  </div>
+  <p class="section-desc">Gerencie o inventário dos seus produtos!</p>
+  <form [formGroup]="produtoForm" (ngSubmit)="adicionarProduto()" class="produto-form">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome do Produto</mat-label>
+      <input matInput formControlName="nome" required />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Preço</mat-label>
+      <input matInput type="number" formControlName="preco" required />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Estoque</mat-label>
+      <input matInput type="number" formControlName="estoque" required />
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="produtoForm.invalid" class="cookie-btn"><mat-icon>add</mat-icon>Adicionar Produto</button>
+  </form>
+
+  <table mat-table [dataSource]="produtos" class="mat-elevation-z8">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let produto">{{ produto.id }}</td>
+    </ng-container>
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef>Nome</th>
+      <td mat-cell *matCellDef="let produto">
+        <ng-container *ngIf="!(editMode && editingId === produto.id); else editNome">
+          {{ produto.nome }}
+        </ng-container>
+        <ng-template #editNome>
+          <div *ngIf="editForm" [formGroup]="editForm">
+            <input matInput formControlName="nome" />
+          </div>
+        </ng-template>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="preco">
+      <th mat-header-cell *matHeaderCellDef>Preço</th>
+      <td mat-cell *matCellDef="let produto">
+        <ng-container *ngIf="!(editMode && editingId === produto.id); else editPreco">
+          {{ produto.preco | number:'1.2-2' }}
+        </ng-container>
+        <ng-template #editPreco>
+          <div *ngIf="editForm" [formGroup]="editForm">
+            <input matInput type="number" formControlName="preco" />
+          </div>
+        </ng-template>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="estoque">
+      <th mat-header-cell *matHeaderCellDef>Estoque</th>
+      <td mat-cell *matCellDef="let produto">
+        <ng-container *ngIf="!(editMode && editingId === produto.id); else editEstoque">
+          {{ produto.estoque }}
+        </ng-container>
+        <ng-template #editEstoque>
+          <div *ngIf="editForm" [formGroup]="editForm">
+            <input matInput type="number" formControlName="estoque" />
+          </div>
+        </ng-template>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Ações</th>
+      <td mat-cell *matCellDef="let produto">
+        <ng-container *ngIf="!(editMode && editingId === produto.id)">
+          <button mat-icon-button color="primary" (click)="startEdit(produto)" matTooltip="Editar Produto"><mat-icon>edit</mat-icon></button>
+          <button mat-icon-button color="warn" (click)="deleteProduto(produto)" matTooltip="Remover Produto"><mat-icon>delete</mat-icon></button>
+        </ng-container>
+        <ng-container *ngIf="editMode && editingId === produto.id">
+          <button mat-icon-button color="primary" (click)="saveEdit(produto)" [disabled]="!editForm?.valid" matTooltip="Salvar"><mat-icon>check</mat-icon></button>
+          <button mat-icon-button color="accent" (click)="cancelEdit()" matTooltip="Cancelar"><mat-icon>close</mat-icon></button>
+        </ng-container>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="['id', 'nome', 'preco', 'estoque', 'actions']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['id', 'nome', 'preco', 'estoque', 'actions'];"></tr>
+  </table>
+</div> 
