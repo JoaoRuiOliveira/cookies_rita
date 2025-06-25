@@ -5,3 +5,4 @@ id,cliente_id,ingredientes,total,timestamp,data_entrega
 4,1,"[{'id': 1, 'nome': 'Chocolate Chip', 'quantidade': 7.0}]",17.5,2025-05-30T14:59:58.648464,2025-06-06T14:59:58.648464
 5,3,"[{'id': 1, 'nome': 'Chocolate Chip', 'quantidade': 3.0}, {'id': 2, 'nome': 'Amêndoa', 'quantidade': 4.0}]",19.5,2025-05-30T15:00:24.977473,2025-06-06T15:00:24.977473
 6,5,"[{'id': 2, 'nome': 'Amêndoa', 'quantidade': 3.0}, {'id': 3, 'nome': 'Red Velvet', 'quantidade': 3.0}, {'id': 2, 'nome': 'Amêndoa', 'quantidade': 1.0}]",22.5,2025-05-30T15:02:57.057223,2025-06-06T15:02:57.057223
+7,2,"[{'id': 1, 'nome': 'Chocolate Chip', 'quantidade': 2.0}, {'id': 3, 'nome': 'Red Velvet', 'quantidade': 1.0}]",8.5,2025-06-25T09:53:58.543724,2025-07-02T08:50

@@ -35,7 +35,7 @@ export class ClienteListaComponent {
     this.clienteForm = this.fb.group({
       nome: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      contacto: ['', Validators.required]
+      contacto: ['', [this.optionalContactoValidator]]
     });
     this.loadClientes();
   }
@@ -98,7 +98,7 @@ export class ClienteListaComponent {
       id: [cliente.id, Validators.required],
       nome: [cliente.nome, Validators.required],
       email: [cliente.email, [Validators.required, Validators.email]],
-      contacto: [cliente.contacto, Validators.required]
+      contacto: [cliente.contacto, [this.optionalContactoValidator]]
     });
   }
 
@@ -148,5 +148,13 @@ export class ClienteListaComponent {
 
   get contactoControl() {
     return this.editForm ? (this.editForm.get('contacto') as import('@angular/forms').FormControl) : null;
+  }
+
+  optionalContactoValidator(control: import('@angular/forms').AbstractControl) {
+    const value = control.value;
+    if (!value) return null; // Campo opcional
+    // Aceita números começados por 2, 3, 9 e 9 dígitos
+    const valid = /^([239][0-9]{8})$/.test(value);
+    return valid ? null : { invalidContacto: true };
   }
 }

@@ -1,1 +1,35 @@
-[] 
+[
+  {
+    "id": 1,
+    "title": "Fátima!",
+    "date": "2025-06-26T11:00:00.000Z",
+    "description": "IDA A FÁTIMA!!!!!!!!!!!",
+    "isImportant": true,
+    "startDate": "2025-06-26T11:00:00.000Z",
+    "endDate": "2025-06-26T21:00:00.000Z",
+    "category": "party",
+    "order_id": null
+  },
+  {
+    "id": 2,
+    "title": "Noruega",
+    "date": "2025-06-17T07:00:00.000Z",
+    "description": "Férias na Noruega",
+    "isImportant": false,
+    "startDate": "2025-06-17T07:00:00.000Z",
+    "endDate": "2025-06-24T11:00:00.000Z",
+    "category": "holiday",
+    "order_id": null
+  },
+  {
+    "id": 3,
+    "title": "Release Calendar feature!",
+    "date": "2025-06-25T15:00:00.000Z",
+    "description": "Dia de release da feature de calendário da app!",
+    "isImportant": true,
+    "startDate": "2025-06-25T15:00:00.000Z",
+    "endDate": "2025-06-25T16:00:00.000Z",
+    "category": "party",
+    "order_id": null
+  }
+]

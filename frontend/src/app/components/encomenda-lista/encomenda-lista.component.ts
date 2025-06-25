@@ -146,7 +146,7 @@ export class EncomendaListaComponent {
       const ids = ingredientesValidos.map(i => i.id);
       const hasDuplicates = ids.some((id, idx) => ids.indexOf(id) !== idx);
       if (hasDuplicates) {
-        this.snackBar.open('Não é permitido adicionar o mesmo produto mais de uma vez no pedido.', 'Fechar', { duration: 2500 });
+        this.snackBar.open('Não é permitido adicionar o mesmo produto mais de uma vez na encomenda.', 'Fechar', { duration: 2500 });
         return;
       }
       const encomendaData = {
@@ -159,7 +159,7 @@ export class EncomendaListaComponent {
       };
       if (this.editMode && this.editingId !== null) {
         this.encomendaService.atualizarEncomenda(encomendaData).subscribe(() => {
-          this.snackBar.open('Pedido atualizado com sucesso!', 'Fechar', { duration: 2000 });
+          this.snackBar.open('Encomenda atualizada com sucesso!', 'Fechar', { duration: 2000 });
           this.encomendaForm.reset();
           this.encomendaForm.setControl('ingredientes', this.fb.array([]));
           this.encomendaForm.get('data_entrega')?.setValue(this.getDefaultEntregaDate());
@@ -169,7 +169,7 @@ export class EncomendaListaComponent {
         });
       } else {
         this.encomendaService.adicionarEncomenda(encomendaData).subscribe(() => {
-          this.snackBar.open('Pedido adicionado com sucesso!', 'Fechar', { duration: 2000 });
+          this.snackBar.open('Encomenda adicionada com sucesso!', 'Fechar', { duration: 2000 });
           this.encomendaForm.reset();
           this.encomendaForm.setControl('ingredientes', this.fb.array([]));
           this.encomendaForm.get('data_entrega')?.setValue(this.getDefaultEntregaDate());
@@ -229,9 +229,9 @@ export class EncomendaListaComponent {
   }
 
   deleteEncomenda(encomenda: Encomenda) {
-    if (confirm('Tem certeza que deseja remover este pedido?')) {
+    if (confirm('Tem certeza que deseja remover esta encomenda?')) {
       this.encomendaService.deletarEncomenda(encomenda.id).subscribe(() => {
-        this.snackBar.open('Pedido removido com sucesso!', 'Fechar', { duration: 2000 });
+        this.snackBar.open('Encomenda removida com sucesso!', 'Fechar', { duration: 2000 });
         this.loadEncomendas();
         // If deleting the one being edited, reset form
         if (this.editMode && this.editingId === encomenda.id) {

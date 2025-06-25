@@ -9,7 +9,7 @@
       <input #fileInput type="file" accept=".csv" style="display:none" (change)="onFileSelected($event)" />
     </div>
   </div>
-  <p class="section-desc">Gerencie os ingredientes usados para preparar seus cookies!</p>
+  <p class="section-desc">Gerencie os ingredientes usados para preparar os seus biscoitos!</p>
   <form [formGroup]="ingredienteForm" (ngSubmit)="adicionarIngrediente()" class="ingrediente-form">
     <mat-form-field appearance="outline">
       <mat-label>Nome do Ingrediente</mat-label>

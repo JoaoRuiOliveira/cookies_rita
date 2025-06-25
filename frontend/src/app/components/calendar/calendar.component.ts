@@ -75,6 +75,8 @@ import { CalendarService, CalendarEvent } from '../../services/calendar.service'
                       <mat-icon *ngIf="event.category === 'holiday'">beach_access</mat-icon>
                       <mat-icon *ngIf="event.category === 'meeting'">groups</mat-icon>
                       <mat-icon *ngIf="event.category === 'party'">celebration</mat-icon>
+                      <mat-icon *ngIf="event.category === 'delivery'">local_shipping</mat-icon>
+                      <mat-icon *ngIf="event.category === 'order'">shopping_cart</mat-icon>
                       <span *ngIf="isSameDay(day.date, event.startDate) || isSameDay(day.date, event.endDate)" class="event-title">{{ event.title }}</span>
                     </div>
                   </ng-container>
@@ -87,6 +89,8 @@ import { CalendarService, CalendarEvent } from '../../services/calendar.service'
                       <mat-icon *ngIf="event.category === 'holiday'">beach_access</mat-icon>
                       <mat-icon *ngIf="event.category === 'meeting'">groups</mat-icon>
                       <mat-icon *ngIf="event.category === 'party'">celebration</mat-icon>
+                      <mat-icon *ngIf="event.category === 'delivery'">local_shipping</mat-icon>
+                      <mat-icon *ngIf="event.category === 'order'">shopping_cart</mat-icon>
                       <span class="event-time">{{ event.date | date:'HH:mm' }}</span>
                       <span class="event-title">{{ event.title }}</span>
                     </div>
@@ -122,7 +126,7 @@ import { CalendarService, CalendarEvent } from '../../services/calendar.service'
             <h3><mat-icon>star</mat-icon> Upcoming Important Events</h3>
           </div>
           <div class="important-list">
-            <div *ngFor="let event of getUpcomingImportantEvents()" class="important-event" (click)="selectDate(event.date); selectEvent(event)">
+            <div *ngFor="let event of getUpcomingImportantEvents()" class="important-event" (click)="selectDate(getEventDate(event)); selectEvent(event)">
               <div class="important-date">
                 <span class="day">{{ event.date | date:'EEE' }}</span>
                 <span class="date">{{ event.date | date:'MMM d' }}</span>
@@ -174,6 +178,8 @@ import { CalendarService, CalendarEvent } from '../../services/calendar.service'
                     <mat-icon *ngIf="event.category === 'holiday'">beach_access</mat-icon>
                     <mat-icon *ngIf="event.category === 'meeting'">groups</mat-icon>
                     <mat-icon *ngIf="event.category === 'party'">celebration</mat-icon>
+                    <mat-icon *ngIf="event.category === 'delivery'">local_shipping</mat-icon>
+                    <mat-icon *ngIf="event.category === 'order'">shopping_cart</mat-icon>
                     {{ event.title }}
                   </h4>
                   <div class="event-actions">
@@ -692,7 +698,7 @@ export class CalendarComponent implements OnInit, OnDestroy {
     this.updateClock();
     this.clockInterval = setInterval(() => this.updateClock(), 1000);
     this.currentDateString = this.currentDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-    // this.loadEvents(); // Commented out to prevent 404
+    this.loadEvents();
   }
 
   ngOnDestroy() {
@@ -794,20 +800,26 @@ export class CalendarComponent implements OnInit, OnDestroy {
   }
 
   hasEvents(date: Date): boolean {
-    return this.events.some(event => 
-      event.date.getDate() === date.getDate() &&
-      event.date.getMonth() === date.getMonth() &&
-      event.date.getFullYear() === date.getFullYear()
-    );
+    return this.events.some(event => {
+      const eventDate = typeof event.date === 'string' ? new Date(event.date) : event.date;
+      return (
+        eventDate.getDate() === date.getDate() &&
+        eventDate.getMonth() === date.getMonth() &&
+        eventDate.getFullYear() === date.getFullYear()
+      );
+    });
   }
 
   hasImportantEvents(date: Date): boolean {
-    return this.events.some(event => 
-      event.isImportant &&
-      event.date.getDate() === date.getDate() &&
-      event.date.getMonth() === date.getMonth() &&
-      event.date.getFullYear() === date.getFullYear()
-    );
+    return this.events.some(event => {
+      const eventDate = typeof event.date === 'string' ? new Date(event.date) : event.date;
+      return (
+        event.isImportant &&
+        eventDate.getDate() === date.getDate() &&
+        eventDate.getMonth() === date.getMonth() &&
+        eventDate.getFullYear() === date.getFullYear()
+      );
+    });
   }
 
   getEventsForDate(date: Date): CalendarEvent[] {
@@ -815,32 +827,55 @@ export class CalendarComponent implements OnInit, OnDestroy {
       // Support both legacy (event.date) and new (event.startDate, event.endDate) events
       if (event.startDate && event.endDate) {
         const d = new Date(date.getFullYear(), date.getMonth(), date.getDate());
-        const start = new Date(event.startDate);
-        const end = new Date(event.endDate);
+        const start = typeof event.startDate === 'string' ? new Date(event.startDate) : event.startDate;
+        const end = typeof event.endDate === 'string' ? new Date(event.endDate) : event.endDate;
         start.setHours(0,0,0,0);
         end.setHours(0,0,0,0);
         return d >= start && d <= end;
       } else {
+        const eventDate = typeof event.date === 'string' ? new Date(event.date) : event.date;
         return (
-          event.date.getDate() === date.getDate() &&
-          event.date.getMonth() === date.getMonth() &&
-          event.date.getFullYear() === date.getFullYear()
+          eventDate.getDate() === date.getDate() &&
+          eventDate.getMonth() === date.getMonth() &&
+          eventDate.getFullYear() === date.getFullYear()
         );
       }
     }).sort((a, b) => {
       // Sort by start time if available, else by date
-      const aTime = a.startDate ? new Date(a.startDate).getTime() : a.date.getTime();
-      const bTime = b.startDate ? new Date(b.startDate).getTime() : b.date.getTime();
+      const aTime = a.startDate ? (typeof a.startDate === 'string' ? new Date(a.startDate).getTime() : a.startDate.getTime()) : (typeof a.date === 'string' ? new Date(a.date).getTime() : a.date.getTime());
+      const bTime = b.startDate ? (typeof b.startDate === 'string' ? new Date(b.startDate).getTime() : b.startDate.getTime()) : (typeof b.date === 'string' ? new Date(b.date).getTime() : b.date.getTime());
       return aTime - bTime;
     });
   }
 
   toggleEventImportance(event: CalendarEvent) {
+    // Don't allow modifying order events (they come from encomendas.csv)
+    if (typeof event.id === 'string' && event.id.startsWith('order_')) {
+      alert('Order events cannot be modified manually. They are managed through the Orders tab.');
+      return;
+    }
+    
     event.isImportant = !event.isImportant;
+    // Update the event on the backend
+    this.calendarService.updateEvent(event.id!, event).subscribe(
+      () => {
+        // Success - no need to do anything
+      },
+      (error) => {
+        console.error('Error updating event:', error);
+        // Revert the change if update failed
+        event.isImportant = !event.isImportant;
+      }
+    );
   }
 
   selectEvent(event: CalendarEvent) {
     this.selectedEvent = event;
+  }
+
+  // Helper method to convert event date to Date object
+  getEventDate(event: CalendarEvent): Date {
+    return typeof event.date === 'string' ? new Date(event.date) : event.date;
   }
 
   openAddEventDialog(date: Date) {
@@ -851,10 +886,19 @@ export class CalendarComponent implements OnInit, OnDestroy {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
+        // Format the event data for the backend
         const newEvent: CalendarEvent = {
-          ...result,
-          id: this.nextEventId++
+          title: result.title,
+          description: result.description,
+          isImportant: result.isImportant,
+          category: result.category,
+          // Use startDate as the main date field (backend expects 'date')
+          date: result.startDate.toISOString(),
+          // Convert Date objects to ISO strings for backend
+          startDate: result.startDate.toISOString(),
+          endDate: result.endDate.toISOString()
         };
+        
         this.calendarService.addEvent(newEvent).subscribe(
           (event) => {
             this.events.push(event);
@@ -869,6 +913,12 @@ export class CalendarComponent implements OnInit, OnDestroy {
   }
 
   deleteEvent(event: CalendarEvent) {
+    // Don't allow deletion of order events (they come from encomendas.csv)
+    if (typeof event.id === 'string' && event.id.startsWith('order_')) {
+      alert('Order events cannot be deleted manually. They are managed through the Orders tab.');
+      return;
+    }
+    
     if (confirm('Are you sure you want to delete this event?')) {
       this.calendarService.deleteEvent(event.id!).subscribe(
         () => {
@@ -884,24 +934,31 @@ export class CalendarComponent implements OnInit, OnDestroy {
   getUpcomingImportantEvents(): CalendarEvent[] {
     const now = new Date();
     return this.events
-      .filter(e => e.isImportant && new Date(e.date) >= now)
-      .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+      .filter(e => {
+        const eventDate = typeof e.date === 'string' ? new Date(e.date) : e.date;
+        return e.isImportant && eventDate >= now;
+      })
+      .sort((a, b) => {
+        const aDate = typeof a.date === 'string' ? new Date(a.date) : a.date;
+        const bDate = typeof b.date === 'string' ? new Date(b.date) : b.date;
+        return aDate.getTime() - bDate.getTime();
+      })
       .slice(0, 5);
   }
 
   loadEvents() {
-    // this.calendarService.getEvents().subscribe(
-    //   (data) => {
-    //     this.events = data.map(event => ({
-    //       ...event,
-    //       date: new Date(event.date),
-    //       startDate: event.startDate ? new Date(event.startDate) : undefined,
-    //       endDate: event.endDate ? new Date(event.endDate) : undefined
-    //     }));
-    //     this.updateCalendarDays();
-    //   },
-    //   (error) => console.error('Error loading events:', error)
-    // );
+    this.calendarService.getEvents().subscribe(
+      (data) => {
+        this.events = data.map(event => ({
+          ...event,
+          date: typeof event.date === 'string' ? new Date(event.date) : event.date,
+          startDate: event.startDate ? (typeof event.startDate === 'string' ? new Date(event.startDate) : event.startDate) : undefined,
+          endDate: event.endDate ? (typeof event.endDate === 'string' ? new Date(event.endDate) : event.endDate) : undefined
+        }));
+        this.updateCalendarDays();
+      },
+      (error) => console.error('Error loading events:', error)
+    );
   }
 
   importEvents(event: any) {

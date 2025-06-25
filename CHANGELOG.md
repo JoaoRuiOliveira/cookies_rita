@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] - 2024-06-25
+
+### Added
+- **Contact** field (optional) for clients (backend, frontend, and CSV).
+- Portuguese phone number validation (9 digits, starts with 2, 3, or 9) in the client form.
+- Example contact numbers added to the `clientes.csv` file.
+- **Calendar/Orders Integration:** Orders (`encomendas`) now automatically appear as events in the calendar, with delivery dates and client details.
+
+### Changed
+- All labels and descriptions are now in European Portuguese (e.g., "encomenda" instead of "pedido", "biscoitos" instead of "cookies").
+- The "Contact" field now appears in the client table and form.
+- The "Contact" field is now included in client CSV import/export.
+
+### Fixed
+- Fixed texts and messages that were in Brazilian Portuguese.
+- **Calendar:** Fixed order events so that all orders are always visible in the calendar, and regular calendar events (holidays, meetings, etc.) can be managed independently.
+
 ## [Unreleased] - 2024-06-24
 
 ### Added

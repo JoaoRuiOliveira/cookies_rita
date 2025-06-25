@@ -9,7 +9,7 @@
       <input #fileInput type="file" accept=".csv" style="display:none" (change)="onFileSelected($event)" />
     </div>
   </div>
-  <p class="section-desc">Gerencie os clientes que compram seus deliciosos cookies!</p>
+  <p class="section-desc">Gerencie os clientes que compram os seus deliciosos biscoitos!</p>
   <form [formGroup]="clienteForm" (ngSubmit)="adicionarCliente()" class="cliente-form">
     <mat-form-field appearance="outline">
       <mat-label>Nome do Cliente</mat-label>
@@ -21,7 +21,7 @@
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Contacto</mat-label>
-      <input matInput formControlName="contacto" required />
+      <input matInput formControlName="contacto" />
     </mat-form-field>
     <button mat-raised-button color="primary" type="submit" [disabled]="!clienteForm.valid" class="cookie-btn"><mat-icon>cookie</mat-icon>Adicionar Cliente</button>
   </form>

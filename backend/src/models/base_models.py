@@ -1,10 +1,12 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
+from datetime import datetime
 
 class Cliente(BaseModel):
     id: int
     nome: str
     email: str
+    contacto: str
 
 class Ingrediente(BaseModel):
     id: int
@@ -33,4 +35,15 @@ class Receita(BaseModel):
     id: int
     nome: str
     descricao: str
-    ingredientes: List[ReceitaIngrediente] 
+    ingredientes: List[ReceitaIngrediente]
+
+class CalendarEvent(BaseModel):
+    id: Optional[int] = None
+    title: str
+    date: str  # ISO format string
+    description: str
+    isImportant: bool = False
+    startDate: Optional[str] = None  # ISO format string for multi-day events
+    endDate: Optional[str] = None    # ISO format string for multi-day events
+    category: str = "general"  # general, holiday, meeting, party, delivery, order
+    order_id: Optional[int] = None  # Link to order if it's a delivery event 

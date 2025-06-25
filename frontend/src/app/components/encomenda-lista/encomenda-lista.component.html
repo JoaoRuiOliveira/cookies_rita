@@ -9,7 +9,7 @@
       <input #fileInput type="file" accept=".csv" style="display:none" (change)="onFileSelected($event)" />
     </div>
   </div>
-  <p class="section-desc">Gerencie os pedidos feitos pelos clientes!</p>
+  <p class="section-desc">Gerencie as encomendas feitas pelos clientes!</p>
   <form [formGroup]="encomendaForm" (ngSubmit)="adicionarEncomenda()" class="encomenda-form">
     <div class="main-fields-row">
       <mat-form-field appearance="outline" class="cliente-id-field">

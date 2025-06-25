@@ -81,10 +81,13 @@ interface DialogData {
           <mat-form-field appearance="outline">
             <mat-label>Category</mat-label>
             <mat-select [(ngModel)]="event.category" name="category" required>
+              <mat-option value="general">General</mat-option>
               <mat-option value="important">Important</mat-option>
               <mat-option value="holiday">Holiday</mat-option>
               <mat-option value="meeting">Meeting</mat-option>
               <mat-option value="party">Party</mat-option>
+              <mat-option value="delivery">Delivery</mat-option>
+              <mat-option value="order">Order</mat-option>
             </mat-select>
             <mat-icon matSuffix>category</mat-icon>
           </mat-form-field>
